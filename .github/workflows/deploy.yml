@@ -10,6 +10,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     
     steps:
     - name: Checkout repository
@@ -25,6 +29,14 @@ jobs:
       
     - name: Build project
       run: bun run build
+      
+    - name: Verify build output
+      run: |
+        echo "Build output contents:"
+        ls -la dist/
+        echo "Checking if dist directory exists and has content:"
+        test -d dist && echo "dist directory exists" || echo "dist directory missing"
+        test -f dist/index.html && echo "index.html exists" || echo "index.html missing"
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
