@@ -125,8 +125,8 @@ export function ConfigUpload({ onConfigLoaded }: ConfigUploadProps) {
                   Expected structure:
                   <pre className="mt-2 text-xs bg-muted p-2 rounded">
     {`{
-      "_env": {
-        "pinataJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+      "__env": {
+        "quickNodeApiKey": "your-quicknode-api-key-here"
       },
       "development": {
         "ipnsPublicKey": "k51qzi5uqu5dg7f...",
