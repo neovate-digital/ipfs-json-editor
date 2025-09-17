@@ -3,6 +3,36 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
+  "description": "A modern web interface for managing environment variables and configuration files with IPFS/IPNS integration",
+  "keywords": [
+    "ipfs",
+    "ipns",
+    "environment-variables",
+    "config",
+    "configuration-management",
+    "json",
+    "variables",
+    "web3",
+    "decentralized",
+    "quicknode",
+    "react",
+    "typescript",
+    "vite"
+  ],
+  "author": "Neovate Digital",
+  "license": "MIT",
+  "homepage": "https://github.com/neovate-digital/ipfs-json-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neovate-digital/ipfs-json-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neovate-digital/variables-ui/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
