@@ -1,7 +1,7 @@
 {
-  "name": "variables-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ipfs-json-editor",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,21 +11,8 @@
     "secret:prod": "./scripts/fetch-secrets.sh production prod-bet",
     "secret:dev": "./scripts/fetch-secrets.sh development dev",
     "secret:games": "./scripts/fetch-secrets.sh production prod-games",
-    "secret:cleanup": "./scripts/cleanup-1password.sh",
-    "upload:dist-ipfs": "bun run scripts/upload-dist-ipfs-cli.ts",
-    "upload:dist-web3": "bun run scripts/upload-dist-web3storage.ts",
-    "upload:dist-helia": "bun run scripts/upload-dist-helia-proper.ts",
-    "upload:dist-multi": "bun run scripts/upload-dist-multi-ipfs.ts",
-    "upload:dist-kubo": "bun run scripts/upload-dist-kubo-rpc.ts",
-    "upload:dist-pinata": "bun run scripts/upload-dist-pinata.ts",
-    "upload:dist-simple": "bun run scripts/upload-dist-simple.ts",
-    "upload:dist-no-cli": "bun run scripts/upload-dist-no-cli.ts",
-    "upload:dist-browser": "bun run scripts/upload-dist-browser.ts",
-    "upload:dist-hybrid": "bun run scripts/upload-dist-hybrid.ts",
-    "upload:dist-helia-opt": "bun run scripts/upload-dist-helia-optimized.ts",
-    "upload:dist-helia-final": "bun run scripts/upload-dist-helia-final.ts",
-    "daemon": "bun run scripts/ipfs-daemon.ts",
-    "deploy:ipfs": "ipfs add -r --wrap-with-directory dist"
+    "secret:cleanup": "./scripts/cleanup-1password.sh"
+   
   },
   "dependencies": {
     "@chainsafe/libp2p-yamux": "^7.0.4",
