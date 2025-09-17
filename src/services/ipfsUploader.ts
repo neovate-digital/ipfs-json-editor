@@ -118,12 +118,13 @@ export async function getAllPinnedObjects(
     const apiKey = getQuickNodeApiKey(quickNodeApiKey);
 
     // Use the correct endpoint from QuickNode docs: GET Get All PinnedObjects
-    const response = await fetch("https://api.quicknode.com/ipfs/rest/v1/pinning?pageNumber=1&perPage=10", {
+    const response = await fetch("https://api.quicknode.com/ipfs/rest/v1/pinning", {
       method: 'GET',
       headers: {
         'x-api-key': apiKey
       }
     });
+
 
     if (!response.ok) {
       const errorText = await response.text();
